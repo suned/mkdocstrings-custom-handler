@@ -1,0 +1,25 @@
+site_name: mkdocstrings_test
+site_description: test
+site_url: https://foo.com
+edit_uri: ''
+nav:
+  - test: test.md
+markdown_extensions:
+    - codehilite
+    - admonition
+theme:
+    name: material
+plugins:
+    - search
+    - mkdocstrings:
+        handlers:
+            custom_handler:
+              rendering:
+                show_source: false
+                show_root_heading: true
+                heading_level: 1  
+            python:
+              rendering:
+                show_source: false
+                show_root_heading: true
+                heading_level: 1
